@@ -1,5 +1,7 @@
 package pattern_programs;
 
+import java.util.Iterator;
+
 public class Pattern5 {
 	/*
 	7 6 5 4 3 2 1
@@ -11,7 +13,7 @@ public class Pattern5 {
 	7
 	 */
 	public static void main(String[] args) {
-		for (int i =1; i <=7; i++) {
+		for (int i = 1; i<=7; i++) {
 			for (int j =7; j>=i; j--) {
 				System.out.print(j+" ");
 			}
