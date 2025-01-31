@@ -1,17 +1,17 @@
 package array_programs;
 
-public class DuplicteAvoid {
+public class EvenNumber {
 	public static void main(String[] args) {
-		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 5, 6, 7, 83, 9, 10, 1, 2, 3, 5, 6, 7, 8, 9, 10 };
+		int a[] = { 1, 2, 3, 2, 3, 4, 3, 6, 5, 4, 6, 4, 8, 8, 5, 6, 3, 2 };
 		for (int i = 0; i < a.length; i++) {
-			boolean falge = false;
+			boolean flage = false;
 			for (int j = 0; j < i; j++) {
 				if (a[i] == a[j]) {
-					falge = true;
+					flage = true;
 					break;
 				}
 			}
-			if (!falge) {
+			if (!flage && a[i] % 2 == 0) {
 				System.out.print(a[i] + " ");
 			}
 		}
