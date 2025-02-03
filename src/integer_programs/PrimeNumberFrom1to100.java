@@ -1,6 +1,6 @@
 package integer_programs;
 
-public class PrimeNumber {
+public class PrimeNumberFrom1to100 {
 	public static void main(String[] args) {
 		int numbet = 1;
 		while (numbet != 100) {
