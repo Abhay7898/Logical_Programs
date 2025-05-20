@@ -6,11 +6,15 @@ public class FrequencyCount {
 		for (int i = 0; i < a.length; i++) {
 			int count = 1;
 			boolean flage = false;
+			
+			// For Count 
 			for (int j = i + 1; j < a.length; j++) {
 				if (a[i] == a[j]) {
 					count++;
 				}
 			}
+			
+			// Avoid Duplicate 
 			for (int j = 0; j < i; j++) {
 				if (a[i] == a[j]) {
 					flage = true;
@@ -18,7 +22,7 @@ public class FrequencyCount {
 				}
 			}
 			if (!flage) {
-				System.out.println(a[i] + " " + count + "    ");
+				System.out.println(a[i] + " " + count );
 			}
 		}
 	}

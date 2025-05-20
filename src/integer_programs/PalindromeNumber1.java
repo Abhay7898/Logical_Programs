@@ -5,12 +5,11 @@ public class PalindromeNumber1 {
 		int number = 12321;
 		int check = number;
 		int pen = 0;
-		while (number > 0) {
-			int one = number % 10;
-			pen=(pen*10)+one;
-			number/=10;
+		while (number != 0) {
+			pen = (pen * 10) + number % 10;
+			number /= 10;
 		}
-		if (pen==check) {
+		if (pen == check) {
 			System.out.println("Yes");
 		} else {
 			System.out.println("No");

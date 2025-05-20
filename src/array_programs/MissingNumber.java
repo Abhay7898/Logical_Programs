@@ -20,7 +20,7 @@ public class MissingNumber {
 				}
 			}
 			if (!falge) {
-				System.out.println(i);
+				System.out.print(i+" ");
 			}
 		}
 	}

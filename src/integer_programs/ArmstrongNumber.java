@@ -6,14 +6,11 @@ public class ArmstrongNumber {
 		int check = num;
 
 		int sum = 0;
-
-		//int digit = String.valueOf(num).length();
+		int digit = String.valueOf(num).length();
 		
-		int digit=0, just=num;
-		while (just!=0) {
-			digit++;
-			just/=10;
-		}
+		/*
+		 * int digit=0, just=num; while (just!=0) { digit++; just/=10; }
+		 */
 		
 		while (num != 0) {
 			int temp = 1;
@@ -24,6 +21,7 @@ public class ArmstrongNumber {
 			sum += temp;
 			num /= 10;
 		}
+		
 		if (sum==check) {
 			System.out.println("Yes");
 		} else {

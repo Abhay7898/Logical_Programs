@@ -3,13 +3,12 @@ package string_programs;
 public class CharacterRemove1 {
 	public static void main(String[] args) {
 		String s = "Abhay Garhwal";
-		char ch[] = s.toLowerCase().toCharArray();
-		s = "";
-		for (char c : ch) {
-			if (c != 'a') {
-				s += c;
+		String s1 = "";
+		for (char ch : s.toLowerCase().toCharArray()) {
+			if (ch != 'a') {
+				s1 += ch;
 			}
 		}
-		System.out.println(s);
+		System.out.println(s1);
 	}
 }

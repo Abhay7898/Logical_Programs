@@ -7,12 +7,12 @@ public class NonReaptingElement {
 			boolean flage = false;
 			for (int j = 0; j < a.length; j++) {
 				if (i != j && a[i] == a[j]) {
-					flage=true;
+					flage = true;
 					break;
 				}
 			}
 			if (!flage) {
-				System.out.print(a[i]+" ");
+				System.out.print(a[i] + " ");
 			}
 		}
 	}

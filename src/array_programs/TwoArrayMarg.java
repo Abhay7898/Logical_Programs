@@ -12,8 +12,7 @@ public class TwoArrayMarg {
 			if (i < one.length) {
 				newArray[i] = one[i];
 			} else {
-				newArray[i] = two[index];
-				index++;
+				newArray[i] = two[index++];
 			}
 		}
 		System.out.println(Arrays.toString(newArray));

@@ -13,7 +13,7 @@ public class FindNonRepeatedCharacterInString {
 				}
 			}
 			if (!falge) {
-				System.out.println(s.charAt(i));
+				System.out.print(s.charAt(i)+" ");
 			}
 		}
 	}

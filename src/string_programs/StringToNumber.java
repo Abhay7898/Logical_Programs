@@ -8,5 +8,7 @@ public class StringToNumber {
 			num = num * 10 + (int) c - 48;
 		}
 		System.out.println(num);
+		int i =Integer.valueOf(s);
+		System.out.println(i);
 	}
 }

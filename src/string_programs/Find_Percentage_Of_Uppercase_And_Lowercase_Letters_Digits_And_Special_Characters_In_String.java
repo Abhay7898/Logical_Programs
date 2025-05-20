@@ -25,9 +25,9 @@ public class Find_Percentage_Of_Uppercase_And_Lowercase_Letters_Digits_And_Speci
 		System.out.println(special);
 		System.out.println(number);
 
-		System.out.println((double)(alpha * 100) / max);
-		System.out.println((double)(number * 100) / max);
-		System.out.println((double)(special * 100) / max);
+		System.out.println("Alpha "+(double)(alpha * 100) / max);
+		System.out.println("Num "+(double)(number * 100) / max);
+		System.out.println("Special "+(double)(special * 100) / max);
 
 	}
 }

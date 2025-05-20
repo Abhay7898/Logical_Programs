@@ -10,7 +10,7 @@ public class FizzBuzz {
 				System.out.println(i + "/3 = Fizz");
 			}
 			if (i % 5 == 0) {
-				System.out.println(i + "/5 = Fizz");
+				System.out.println(i + "/5 = Buzz");
 			}
 			if (i % 3 == 0 && i % 5 == 0) {
 				System.out.println(i + "/3 and " + i + "/5 = FizzBuzz");

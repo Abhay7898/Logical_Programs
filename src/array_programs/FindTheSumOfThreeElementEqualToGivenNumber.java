@@ -11,9 +11,7 @@ public class FindTheSumOfThreeElementEqualToGivenNumber {
 						System.out.println(a[i] + "+" + a[j] + "+" + a[j2] + "=" + sum);
 					}
 				}
-				if (a[i] + a[j] == sum) {
-					System.out.println(a[i] + "+" + a[j] + "=" + sum);
-				}
+				
 			}
 		}
 	}

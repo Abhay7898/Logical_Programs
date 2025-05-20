@@ -22,7 +22,7 @@ public class Pattern11 {
 				System.out.print(" ");
 			}
 			for (int j =i; j <=7; j++) {
-				System.out.print(j);
+				System.out.print(j+" ");
 			}
 			System.out.println();
 		}
@@ -31,7 +31,7 @@ public class Pattern11 {
 				System.out.print(" ");
 			}
 			for (int j =i; j<=7; j++) {
-				System.out.print(j);
+				System.out.print(j+" ");
 			}
 			System.out.println();
 		}

@@ -1,6 +1,6 @@
 package array_programs;
 
-public class FindSumOfFourGreaterElement {
+public class FindSumOfFourGreatestElement {
 	public static void main(String[] args) {
 		int a[] = { 1, 2, 9, 7, 6, 8, 7 };
 		int sum = 0;
