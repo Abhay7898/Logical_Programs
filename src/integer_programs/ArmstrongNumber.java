@@ -2,6 +2,7 @@ package integer_programs;
 
 public class ArmstrongNumber {
 	public static void main(String[] args) {
+		//The Sum of power is equal to the digit 
 		int num = 1634;
 		int check = num;
 

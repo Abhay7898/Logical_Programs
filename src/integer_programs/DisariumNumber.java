@@ -7,16 +7,16 @@ public class DisariumNumber {
 		int number = 89;
 		int check = number;
 		int count = 0;
-		int length = String.valueOf(number).length();
-		while (length != 0) {
+		int len = String.valueOf(number).length();
+		while (len != 0) {
 			int one = number % 10;
 			number /= 10;
 			int temp = 1;
-			for (int i = 1; i <= length; i++) {
+			for (int i = 1; i <= len; i++) {
 				temp *= one;
 			}
 			count += temp;
-			length--;
+			len--;
 		}
 		if (count == check) {
 			System.out.println("Yes");

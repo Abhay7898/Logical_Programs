@@ -2,20 +2,20 @@ package string_programs;
 
 public class FindLongestWordWichDoesNotIncludeNumberInIt {
 	public static void main(String[] args) {
-		String s = "Have the function LongestWo3rdsen take the sen para5meter being passed and return the";
+		String s = "Have the function LongestWo3rdsen take the sen parameter being passed and return the";
 		String word = "";
 
 		for (String string : s.split("\\s")) {
 			boolean flage = false;
 			if (word.length() < string.length()) {
 				for (char c : string.toCharArray()) {
-					if (c>=47&&c<=57) {
-						flage=true;
+					if (c >= 47 && c <= 57) {
+						flage = true;
 						break;
 					}
 				}
 				if (!flage) {
-					word=string;
+					word = string;
 				}
 			}
 		}

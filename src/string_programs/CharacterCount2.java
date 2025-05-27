@@ -1,28 +1,24 @@
 package string_programs;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class CharacterCount2 {
 	public static void main(String[] args) {
-		String s = "aasdffaaacc";
-		for (int i = 0; i < s.length(); i++) {
-			boolean flag = false;
-			int count = 1;
-			
-			for (int j = i + 1; j < s.length(); j++) {
-				if (i == s.length() - 1) {
-					flag = true;
-				}
-				if (s.charAt(i) == s.charAt(j)) {
-					count++;
-				} else {
-					i = j;
-					i--;
-					break;
-				}
+		// h1e1l3o2w1r1d1
+		String s = "hello world";
+
+		Map<Character, Integer> m = new HashMap<Character, Integer>();
+
+		for (char c : s.replaceAll("\\s", "").toLowerCase().toCharArray()) {
+			if (m.containsKey(c)) {
+				m.put(c, m.get(c) + 1);
+			} else {
+				m.put(c, 1);
 			}
-			System.out.print(s.charAt(i) + "" + count);
-			if (flag) {
-				break;
-			}
+		}
+		for (Map.Entry<Character, Integer> entry : m.entrySet()) {
+			System.out.print("" + entry.getKey() + entry.getValue());
 		}
 	}
 }

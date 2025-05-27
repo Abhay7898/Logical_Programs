@@ -5,7 +5,6 @@ public class CommOnCharacterInTwoString2 {
 		String s1 = "AbhAay Garhwal".toLowerCase();
 		String s2 = "Abhayxzgw".toLowerCase();
 		String dup = "";
-		
 		for (int i = 0; i < s1.length(); i++) {
 			boolean flage = false;
 			for (int j = 0; j < i; j++) {
@@ -23,12 +22,9 @@ public class CommOnCharacterInTwoString2 {
 			boolean flage = false;
 			for (int j = 0; j < s2.length(); j++) {
 				if (dup.charAt(i) == s2.charAt(j)) {
-					flage = true;
+					System.out.print(dup.charAt(i));
 					break;
 				}
-			}
-			if (flage) {
-				System.out.print(dup.charAt(i));
 			}
 		}
 	}

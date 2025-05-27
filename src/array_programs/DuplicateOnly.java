@@ -29,28 +29,5 @@ public class DuplicateOnly {
 		}
 
 		System.out.println();
-
-		int a1[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 5, 6, 7, 83, 9, 10, 1, 2, 3, 5, 6, 7, 8, 9, 10 };
-		for (int i = 0; i < a1.length; i++) {
-			boolean isDupliacte = false;
-			boolean isPrinted = false;
-			for (int j = 0; j < a1.length; j++) {
-				if (i != j && a1[i] == a1[j]) {
-					isDupliacte = true;
-					break;
-				}
-			}
-			if (isDupliacte) {
-				for (int j = 0; j < i; j++) {
-					if (a1[i] == a1[j]) {
-						isPrinted = true;
-						break;
-					}
-				}
-				if (!isPrinted) {
-					System.out.print(a1[i] + " ");
-				}
-			}
-		}
 	}
 }
