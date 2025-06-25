@@ -3,10 +3,7 @@ package string_programs;
 public class CharacterCount3{
 	public static void main(String[] args) {
 		String s = "aasdffaaaccccch";
-		
 		for (int i = 0; i < s.length();) {
-			
-			boolean flag = false;
 			int count = 1;
 			int next = i + 1;
 			

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SumOfPairElement {
 	public static void main(String[] args) {
-		int a[] = { 5, 34, 78, 2, 45, 1, 99, 23, 10, 10, 12 };
+		int a[] = { 5, 34, 78, 2, 45, 1, 99, 23, 10, 10, 12, 88,88};
 		int newArray[] = new int[(a.length + 1) / 2];
 		int index = 0;
 

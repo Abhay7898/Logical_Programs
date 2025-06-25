@@ -8,14 +8,14 @@ public class BringAllNegetiveElementForward1 {
 		int next = 0;
 		int temp[] = new int[a.length];
 
-		for (int i = 0; i < a.length; i++) {
-			if (a[i] < 0) {
-				temp[next++] = a[i];
+		for (int i : a) {
+			if (i < 0) {
+				temp[next++] = i;
 			}
 		}
-		for (int i = 0; i < temp.length; i++) {
-			if (a[i] >= 0) {
-				temp[next++] = a[i];
+		for (int i : a) {
+			if (i >= 0) {
+				temp[next++] = i;
 			}
 		}
 		System.out.println(Arrays.toString(temp));

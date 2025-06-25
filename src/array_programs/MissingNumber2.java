@@ -1,6 +1,5 @@
 package array_programs;
 
-import java.util.Arrays;
 
 public class MissingNumber2 {
 	public static void main(String[] args) {

@@ -8,6 +8,6 @@ public class SwpingTwoVeriableWithOutUsingThriedVariavle {
 		x = y - x;
 		y = y - x;
 		System.out.println("i = " + x);
-		System.out.println( "y = " + y);
+		System.out.println("y = " + y);
 	}
 }

@@ -5,15 +5,15 @@ public class Find_Longest_Substring_Without_Repeating_Characters {
 		String s = "java2novice";
 		String sub = "";
 		for (int i = 0; i < s.length(); i++) {
-			boolean falge = false;
+			boolean flag = false;
 			for (int j = i + 1; j < s.length(); j++) {
 				if (s.charAt(i) == s.charAt(j)) {
-					falge = true;
+					flag = true;
 					sub = "";
 					break;
 				}
 			}
-			if (!falge) {
+			if (!flag) {
 				sub += s.charAt(i);
 			}
 		}

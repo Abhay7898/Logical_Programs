@@ -9,7 +9,7 @@ public class FindLongestWordWichDoesNotIncludeNumberInIt {
 			boolean flage = false;
 			if (word.length() < string.length()) {
 				for (char c : string.toCharArray()) {
-					if (c >= 47 && c <= 57) {
+					if (c >= '0' && c <= '9') {
 						flage = true;
 						break;
 					}

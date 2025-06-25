@@ -17,11 +17,10 @@ public class AnagramPrograms {
 			Arrays.sort(ch2);
 			if (Arrays.equals(ch1, ch2)) {
 				check = true;
+				System.out.println("Yes");
 			}
 		}
-		if (check) {
-			System.out.println("Yes");
-		}else {
+		if (!check) {
 			System.out.println("No");
 		}
 	}

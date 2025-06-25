@@ -5,7 +5,6 @@ public class DuplicateOnly {
 		int a[] = { 1, 2, 6,4,3, 4, 1, 5, 3, 2, 1 };
 		for (int i = 0; i < a.length; i++) {
 			boolean isDuplicate = false;
-			boolean isPrinted = false;
 
 			// to check a element is duplicate or not
 			for (int j = i + 1; j < a.length; j++) {
@@ -14,8 +13,10 @@ public class DuplicateOnly {
 					break;
 				}
 			}
+			
 			// To check the element is printed or not 
 			if (isDuplicate) {
+				boolean isPrinted = false;
 				for (int j = 0; j < i; j++) {
 					if (a[i] == a[j]) {
 						isPrinted = true;
@@ -27,7 +28,5 @@ public class DuplicateOnly {
 				}
 			}
 		}
-
-		System.out.println();
 	}
 }

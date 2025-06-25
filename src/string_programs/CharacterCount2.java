@@ -10,7 +10,7 @@ public class CharacterCount2 {
 
 		Map<Character, Integer> m = new HashMap<Character, Integer>();
 
-		for (char c : s.replaceAll("\\s", "").toLowerCase().toCharArray()) {
+		for (char c : s.replaceAll("\\s", "").toCharArray()) {
 			if (m.containsKey(c)) {
 				m.put(c, m.get(c) + 1);
 			} else {

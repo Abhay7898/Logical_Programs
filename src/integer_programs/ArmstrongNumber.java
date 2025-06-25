@@ -5,7 +5,6 @@ public class ArmstrongNumber {
 		//The Sum of power is equal to the digit 
 		int num = 1634;
 		int check = num;
-
 		int sum = 0;
 		int digit = String.valueOf(num).length();
 		
@@ -15,9 +14,8 @@ public class ArmstrongNumber {
 		
 		while (num != 0) {
 			int temp = 1;
-			int single = num % 10;
 			for (int i = 0; i < digit; i++) {
-				temp *= single;
+				temp *= num % 10;
 			}
 			sum += temp;
 			num /= 10;

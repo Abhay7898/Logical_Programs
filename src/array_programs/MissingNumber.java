@@ -4,7 +4,7 @@ public class MissingNumber {
 	public static void main(String[] args) {
 		int[] a = { 1, 3, 4, 5, 7, 17, 8, 9, 10, 12, 14, 15 };
 		int max = a[0];
-		int min = a[0];
+		int min = 0;
 		for (int i : a) {
 			if (i > max) {
 				max = i;
